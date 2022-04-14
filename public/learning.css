@@ -1,0 +1,359 @@
+* {
+  box-sizing:border-box !important;
+}
+
+/* Slideshow container */
+body{
+ background: white;
+}
+.navbar{
+  background-image: linear-gradient(to right, black, black,magenta, blue,red,magenta,black);
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /*box-shadow: 0 5px 5px black;*/
+}
+.navbar ul li a{
+ padding: 16px 18px !important;
+ text-transform: uppercase;
+ transition: 1s;
+ color: white;
+}
+.navbar ul li a:hover{background: black;}
+h1.wm-heading{
+  background-image: linear-gradient(to right, #7486b1,#7486b1);
+  margin-left: 15px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Poppins' sans-serif;
+  user-select: none;
+  padding: 0px 20px;
+  box-shadow: 0 0 0 10px white inset;
+}
+.school-section-container{
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(to right,black,black, rgb(53, 36, 46), rgb(27, 16, 24));
+  background-image: linear-gradient(to right, black, black,magenta, blue,red,magenta,black) !important;
+}
+.toggle{
+ background: magenta;
+ margin-right: 20px;
+ display: none;
+}
+.school-section{
+  padding: 20px;
+  overflow: hidden;
+  
+}
+.school-bio{
+  padding: 10px 10px;
+  color: white;
+  font-family: sans-serif;
+}
+.school-bio #button{
+  background: white;
+  color: #6c84a9;
+  font-weight: 600;
+  padding: 10px 0;
+}.school-bio #button:hover{background:#6c84a9;color: white;}
+.school-bio img{
+  width: 35%;
+  height: 160px;
+  margin: 10px 30px;
+  border-radius: 6px;
+}
+/*-------------------------slide section start from here-------------*/
+/* Slideshow container */
+#slideshow-container {
+  padding: 10px;
+  max-width: 1000px;
+  margin: auto;
+  margin: 30px auto;
+}
+.mySlides{
+  width: 100%;
+  display: none;
+  background-image: linear-gradient(black,magenta,black,red);
+  box-shadow: 0 0 10px 10px black;
+  
+}
+/*.mySlides img{animation: irankunda 1s;}
+@keyframes irankunda {
+  from{rotate: 190deg;}
+  to{rotate: 0;}
+}*/
+/*slide section end from here*/
+
+/*another section*/
+#services{
+  padding: 80px 0;
+}
+.service-img{
+  margin-top: 20px;
+  box-shadow: 0 0 0 5px magenta;
+  width: 80%;
+  height: 200px;
+}
+
+.services{
+  padding: 20px;
+}
+.services h4{
+  padding: 5px;
+  margin-top: 25px;
+}
+.title::before{
+  content: '';
+  background: red;
+  height: 5px;
+  width: 200px;
+  display: block;
+  margin: auto;
+  transform: translateY(60px);
+}
+.title::after{
+  content: '';
+  background: red;
+  height: 10px;
+  width: 80px;
+  display: block;
+  margin: auto;
+  transform: translateY(5px);
+}
+#services .btn-primary{
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, red,#31212b);
+}
+/*WHY CHOOSE US*/
+#bg-color{
+  background-image: linear-gradient(to right, black, black,magenta, blue,red,magenta,black);
+  color: white;
+}
+#about-us{
+  padding: 20px 0;
+}
+.about-title{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 8%;
+}
+#about-us img{
+  margin-top: 8%;
+  width: 100%;
+}
+#about-us ul li{margin: 10px 0;}
+#about-us ul{
+  margin-left: 20px;
+}
+
+/*what student say */
+#client-word{
+  margin: 100px 0;
+}
+.client-word{
+  border-left: 4px solid red;
+  margin: 50px 0;
+}
+.client-word img{
+  box-shadow: 0 0 10px 2px black;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.user-details{
+display: inline-block;
+font-size: 12px;
+}
+/*find us on social media*/
+#social-media{
+  background:#f8f9fa;
+  padding: 100px 0;
+}
+#social-media p{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.social-icons img{
+  width: 60px;
+  transition: 0.5s;
+  border-radius: 6px;
+  margin-left: 10px;
+  border-top: 5px solid #7b1789;
+}
+.social-icons a:hover img{
+  transform: translateY(-10px)
+}
+
+/*-----------------footer section--------------*/
+#footer{
+  background-image: linear-gradient(to right, black, black,magenta, blue,red,magenta,black);
+  color: #fff;
+}
+#footer .santech-com{
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-image: linear-gradient(to right,magenta, blue,red,magenta);
+  border-radius: 12px;
+}   
+.footer-box img{
+  background-image: linear-gradient(to right, #a517ba,#efecf0,#5f1782);
+  padding: 10px;
+  width: 30px;
+  border-radius: 6px;
+}
+#footer .form-control{
+  box-shadow: none !important;
+  border-radius: 0;
+  margin-top: 25px;
+  max-width: 300px;
+}
+#footer .btn-primary{
+  box-shadow: none !important;
+  border-radius:0;
+  border: none;
+  margin-top: 30px;
+  background-image: linear-gradient(to right, #a517ba,#5f1782);
+}
+hr{
+  background: white;
+}
+.copyright{
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+/*--------------------------------registor form start from here----------------*/
+
+#form{
+  background:  #6c84a9;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.card-head{
+  display: flex;
+  justify-content: space-between;
+}
+.card-head h1{
+  margin:10px 0 0 20px;
+}
+span#times{
+  margin: 0 30px 0 0;
+  font-weight: 600;
+  font-size: 50px;
+  cursor: pointer;
+}
+.input-field{
+  width: 100%;
+}
+input{
+  color: white;
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px 6px;
+  outline: none;
+  border: 1px solid black;
+  background: none;
+}
+select{
+  width: 90%;
+  border: 1px solid black;
+  outline: none;
+  padding: 10px;
+  border-radius: 12px;
+  background: none;
+  margin: 10px 0;
+}
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.card-footer > button{
+  background: white;
+  box-shadow: 0 0 10px 4px red;
+  outline: none;
+}
+textarea{
+  resize: none;
+  background: none;
+  outline: none;
+  width: 95%;
+  border: 1px solid black;
+}
+#modal{
+  display: flex;
+  justify-content: space-between;
+  transition: 2s;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 10;
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+/*--------------------------registor form end here ------------------------*/
+
+
+
+
+@media screen and (max-width:576px){
+  .navbar{overflow: visible;}
+  .navbar ul{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    background-image:linear-gradient(to right, white, #7388b3) ;
+    width: 100%;
+    top: 55px;
+  }
+  .navbar ul li a{
+    padding: 10px;
+    color: black;
+  }
+  .navbar ul li a:hover{
+    text-align: center;
+    color: white;
+  }
+  .toggle{display: block;}
+}
+@media screen and (max-width:850px){
+  .school-bio > .block .hidden{
+    display: none;
+  }
+  .school-bio .block img{
+    width: 80%;
+    height: 180px;
+  }
+}
+@media screen and (max-width:576px){
+  .school-bio > .block .hidden{
+    display: block;
+  }
+}

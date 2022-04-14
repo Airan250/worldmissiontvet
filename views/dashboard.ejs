@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="bootstrap/jquery/jquery-3.6.0.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col sidebar">
+           <div class="sidebar-header">
+            <i class="fab fa-accusoft"></i><a href="#">Rukundo innocent</a>
+           </div>
+            <ul class="sidebar-item">
+                <li title="iyi button ntago wayikanda!!!"><a href="#" class="active"><i class="fas fa-bell"></i>Worldmission</a></li>
+                <li title="iyi button ntago wayikanda!!!"><a href="#"><i class="fas fa-desktop"></i>computer</a></li>
+                <li title="iyi button ntago wayikanda!!!"><a href="#"><i class="fas fa-baby-carriage"></i>Student</a></li>
+                <li title="iyi button ntago wayikanda!!!"><a href="#"><i class="fas fa-comment"></i>Accounting</a></li>
+                <li title="iyi button ntago wayikanda!!!"><a href="#"><i class="fas fa-birthday-cake"></i>Project</a></li>
+                <li title="iyi button ntago wayikanda!!!"><a href="#"><i class="fas fa-assistive-listening-systems"></i>Tasks</a></li>
+                <li title="iyi button ntago wayikanda!!!"><a href="#"><i class="fas fa-comment-dollar"></i>Cost</a></li>
+            </ul>
+        </div>
+        <div class="col-sm contlors">
+            <div class="navbar navbar-expand">
+                <span href="" class="dashboard-name"><span class="fas fa-stream"></span>dashboard</span>
+                <input type="text" placeholder="search here" class="ml-auto">
+             <div class="super-admin ml-auto">
+                <img src="image/wmission/school.jpg" alt="">
+                <div>
+                    <p><b>Rukundo inno</b></p>
+                    <p>Super admin</p>
+                </div>
+             </div>
+            </div>
+<section id="yellow">
+<section class="container">
+    <div class="row card-flex">
+        <div class="col-lg-3 card-section">
+         <div class="card">
+             <a href="index.html" target="_blank">
+                <h1>18<span class="fas fa-bell card-icon"></span></h1>
+                <p>Our website<span class="fas fa-angle-right"></span></p>
+             </a>
+         </div>
+        </div>
+        <div class="col-lg-3 card-section">
+            <div class="card">
+                <h1>67<span class="fas fa-ad card-icon"></span></h1>
+                <p>Intore club member</p>
+            </div>
+           </div>
+
+           <div class="col-lg-3 card-section">
+            <div class="card">
+                <h1>77<span class="fab fa-ethereum card-icon"></span></h1>
+                <p>student project</p>
+            </div>
+           </div>
+
+           <div class="col-lg-3 card-section">
+            <div class="card background">
+                <h1>12M<span class="fab fa-bitcoin card-icon"></span></h1>
+                <p>Income</p>
+            </div>
+           </div>
+    </div>
+</section>
+
+<!----------------------------------------------big card section------------->
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8">
+        <div class="project">
+            <h2>StudentTable</h2>
+            <a href="#">see all <span class="fas fa-angle-right"></span></a>
+        <table class="table">
+         <thead>
+             <tr>
+                 <th>StudentName</th>
+                 <th>Study</th>
+                 <th>method</th>
+             </tr>
+         </thead>
+         <tbody>
+
+<%if(result.length <= 10){%>
+    <%for(i = 0; i < result.length; i++){%>
+        <tr>
+            <td><%=result[i].firstname%> <%=result[i].lastname%></td>
+            <td><%=result[i].study%></td>
+            <td><td><span class="status black"></span> Applying</td></td>
+        </tr>
+    <%}%>
+<%}%>
+<%if(result.length > 10){%>
+    <%for(i = result.length-6; i < result.length; i++){%>
+        <tr>
+            <td><%=result[i].firstname%> <%=result[i].lastname%></td>
+            <td><%=result[i].study%></td>
+            <td><td><span class="status black"></span> Applying</td></td>
+        </tr>
+    <%}%>
+<%}%>
+         </tbody>
+        </table>
+        </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="project">
+                <h2>Name_Number_Gender</h2>
+                <a href="#">see all <span class="fas fa-angle-right"></span></a>
+
+<%if(result.length <= 10){%>
+    <%for(i = 0; i < result.length; i++){%>
+        <div class="new-customer">
+            <img src="/image/social/whatsapp-icon.png" alt="">
+            <div>
+                <h1><%=result[i].firstname%> <%=result[i].lastname%></h1>
+                <p><%=result[i].phone%></p>
+            </div>
+            <div class="customer-icon">
+                <span><%=result[i].gender%></span>                           
+            </div>
+        </div>
+    <%}%>
+<%}%>
+<%if(result.length > 10){%>
+    <%for(i = result.length-6; i < result.length; i++){%>
+        <div class="new-customer">
+            <img src="/image/social/whatsapp-icon.png" alt="">
+            <div>
+                <h1><%=result[i].firstname%> <%=result[i].lastname%></h1>
+                <p><%=result[i].phone%></p>
+            </div>
+            <div class="customer-icon">
+                <span><%=result[i].gender%></span>                           
+            </div>
+        </div>
+    <%}%>
+<%}%>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+        </div>
+    </div>
+</div>
+<script>
+    $(".dashboard-name").click(function(){
+        $(".sidebar").toggle()
+    })
+</script>
+</body>
+</html>
